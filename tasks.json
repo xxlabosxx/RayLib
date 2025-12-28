@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Raylib",
+            "type": "cppbuild",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
+            "args": [
+                "${workspaceFolder}/src/main.cpp",
+                "-o", "${workspaceFolder}/jogo.exe",
+                "-I", "C:/raylib/raylib/src",
+                "-L", "C:/raylib/raylib/src",
+                "-lraylib", "-lopengl32", "-lgdi32", "-lwinmm",
+                "-mconsole", "-g"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
